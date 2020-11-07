@@ -1,0 +1,19 @@
+# COMP9315 20T1 Final Exam Q6
+  
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q6
+
+a.
+8
+level1: NW, NE, SW, SE
+level2: NE-NW, NE-NE, NE-SW, NE-SE
+
+b.
+NW, NE, NE-NW, NE-NE, NE-SW, NE-SE
+level1: check NW and NE
+level2: check NE-NW, NE-NE, NE-SW and NE-SE
+
+c.
+4 tuples
+1 tuple in NE-NW, 2 tuples in NE-NE, 1 tuple in NE-SW
+

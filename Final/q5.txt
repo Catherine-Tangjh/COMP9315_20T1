@@ -1,0 +1,35 @@
+# COMP9315 20T1 Final Exam Q5
+  
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q5
+
+a.
+220
+Since 100 = b_R > B-2 = 18, and b_R is the outer table, b_S is the inner table:
+Pages = b_R + b_S * ceil(b_R/B-2) = 220
+
+b.
+560
+Step 1: sort each relation
+	Pages_1 = 2 * b_R(1 + ceil(logB-1(b_R/B))) + 2 * b_S(1 + ceil(logB-1(b_S/B)))
+     	       = 400 + 40 = 440
+Step 2: merge sorted relations:
+	best case: Pages_2 = b_R + b_S = 120
+	worst case: Pages_2 = b_R * b_S = 100 * 20 = 2000
+best case: Pages = Pages_1 + Pages_2 = 560
+worst case: Pages = Pages_1 + Pages_2 = 2440
+
+
+c.
+424
+There are 20 buffers, 19 buffers for partitions.
+Since all hash functions distribute tuples uniformly, the pages are also uniformly distribute on partitions.
+For R: each partition has ceil(b_R / 19) = 6 pages
+       total pages in partition are 6 * 19 = 114 pages
+For S: each partition has ceil(b_S / 19) = 2 pages
+       total pages in partition are 2 * 19 = 38 pages
+Pages in partition will be write once and read once. 
+Pages = b_R + b_S + 2 * (114 + 38) = 100 + 20 + 2 * (114 + 38) = 424
+
+
+

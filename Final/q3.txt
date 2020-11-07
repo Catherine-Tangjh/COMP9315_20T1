@@ -1,0 +1,23 @@
+# COMP9315 20T1 Final Exam Q3
+
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q3
+
+a. 
+4000, 4000
+4 * 1000 = 4000
+
+b.
+3996, 4000
+After deleting a stude, 4 Enrolments are deleted from table Enrolments:
+4000 - 4 = 3996
+The reltuples in pg_class is not yet vacuum'd, so it remians 4000.
+
+c.
+0, 4000
+When the table Enrolments is drop, there will be 0 tuple.
+The reltuples in pg_class is not yet vacuum'd, so it remians 4000.
+
+d.
+pg_attribute, pg_class, pg_constraint, pg_database, pg_index, pg_type
+

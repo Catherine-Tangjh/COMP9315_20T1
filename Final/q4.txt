@@ -1,0 +1,39 @@
+# COMP9315 20T1 Final Exam Q4
+
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q4
+
+a.
+79
+Each page has floor(4096 / 32) = 128 tuples.
+So there are ceil(10000/128) = 79 pages.
+
+b.
+18
+Each signature is ceil(58 / 8) = 8 bytes.
+So each page can contain floor(4096/ 8) = 512 signatures.
+Thus there are ceil(10000 / 512) = 20 signature pages.
+
+c.
+34
+For data pages, there are 4 matches on different pages and 10 false matches on the other different pages, so 4 + 10 = 14 data pages are read.
+And for signature pages, all the signature pages are read to find the matches.
+Total pages are read are 20 + 14 = 34 pages.
+
+d.
+99
+All the signature pages and data pages are read: 79 + 20 = 99 pages.
+
+e.
+Using Page signature or bit-slice signature in order to read less signature pages.
+
+f.
+k = 10, m = 7424
+For page signature, use this formulae:
+k = 1/loge2.loge(1/pF) = 10
+m = (1/loge2)2.n.C.loge(1/pF) = 7362
+n is 4 which is the number of the attribute values.
+C is 128 bits which is the number tuples in one page.
+We can also find from the formulae that the size of m in page signature is C times m of tuple signature.
+So it is 128 * 58 = 7424
+

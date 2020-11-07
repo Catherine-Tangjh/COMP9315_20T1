@@ -1,0 +1,19 @@
+# COMP9315 20T1 Final Exam Q7
+  
+Type your answer(s) to replace the xxx's
+Submit this file as your answer for Q7
+
+T1: R(X) W(X)           R(Y)                W(Y)
+T2:           R(Y)           R(X) W(Y)           W(X)
+T3:                R(X)                R(Y)           W(X) W(Y)
+
+
+a. Conflict serializability
+
+No. there exist cycles between both T1 and T2, T1 and T3, T2 and T3.
+For example, there's a conflict between T1:R(X) and T2:W(X), giving a graph edge from T1 to T2. There's also a conflict between T2:R(Y) and T1:W(Y), giving a graph edge from T2 to T1. The edges between T1 and T2 form a cycle, so the schedule is not conflict-serializable.
+
+b.  View serializability
+
+No
+
